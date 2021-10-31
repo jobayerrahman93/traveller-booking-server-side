@@ -10,9 +10,6 @@ app.use(express.json());
 
 
 
-// travellerBooking
-// fcmONsOBCctKRHmS
-
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.ipq6z.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 // console.log(uri);
@@ -40,6 +37,7 @@ async function run() {
             res.json(result);
 
         });
+
 
         // get single service
 
